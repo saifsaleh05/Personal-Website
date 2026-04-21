@@ -1,11 +1,398 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
-</head>
-<body>
-        
-</body>
+    <meta />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+  </head>
+  <body class="selection:bg-gold/20">
+    <div class="min-h-screen">
+      <header
+        class="mx-auto flex w-[min(1120px,calc(100%-2rem))] items-center justify-between py-6 lg:py-8"
+      >
+        <a
+          href="#home"
+          class="font-display text-2xl tracking-[0.2em] text-forest uppercase"
+          >Saifeddin</a
+        >
+        <nav
+          class="hidden items-center gap-6 text-sm font-medium text-ink/80 md:flex"
+        >
+          <a class="transition hover:text-forest" href="#about">About</a>
+          <a class="transition hover:text-forest" href="#work">Work</a>
+          <a class="transition hover:text-forest" href="#process">Process</a>
+          <a
+            class="transition hover:text-forest"
+            href="./assets/SaifeddinSalehCV.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            CV
+          </a>
+          <a
+            class="rounded-full border border-forest px-4 py-2 text-forest transition hover:bg-forest hover:text-cream"
+            href="#contact"
+            >Contact</a
+          >
+        </nav>
+      </header>
+
+      <main id="home">
+        <section
+          class="mx-auto grid w-[min(1120px,calc(100%-2rem))] gap-12 py-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:py-16"
+        >
+          <div>
+            <p
+              class="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-gold"
+            >
+              Personal Website
+            </p>
+            <h1
+              class="font-display text-5xl leading-none text-forest sm:text-6xl lg:text-7xl"
+            >
+              Building thoughtful digital experiences with a sharp eye for
+              detail.
+            </h1>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-ink/75">
+              I'm Saifeddin Saleh, a 20 year old student pushing it hard towards
+              improving myself.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a
+                href="#work"
+                class="rounded-full bg-forest px-6 py-3 text-sm font-semibold text-cream transition hover:-translate-y-0.5 hover:bg-ink"
+              >
+                View My Work
+              </a>
+              <a
+                href="https://github.com/saifsaleh05"
+                target="_blank"
+                rel="noreferrer"
+                class="rounded-full border border-forest bg-white/70 px-6 py-3 text-sm font-semibold text-forest transition hover:-translate-y-0.5 hover:bg-forest hover:text-cream"
+              >
+                GitHub
+              </a>
+              <a
+                href="./assets/SaifeddinSalehCV.pdf"
+                target="_blank"
+                rel="noreferrer"
+                class="rounded-full bg-gold px-6 py-3 text-sm font-semibold text-cream transition hover:-translate-y-0.5 hover:bg-forest"
+              >
+                View CV
+              </a>
+              <a
+                href="https://www.linkedin.com/in/saifeddin-saleh-0b13a1312/"
+                target="_blank"
+                rel="noreferrer"
+                class="rounded-full border border-clay bg-white/70 px-6 py-3 text-sm font-semibold text-forest transition hover:-translate-y-0.5 hover:border-forest"
+              >
+                Let’s Connect
+              </a>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div
+              class="absolute -left-6 top-10 h-28 w-28 rounded-full bg-gold/20 blur-2xl"
+            ></div>
+            <div
+              class="absolute bottom-8 right-0 h-36 w-36 rounded-full bg-forest/15 blur-3xl"
+            ></div>
+            <div
+              class="relative overflow-hidden rounded-[2rem] border border-white/60 bg-[linear-gradient(135deg,rgba(255,255,255,0.92),rgba(246,239,228,0.85))] p-6 shadow-card backdrop-blur"
+            >
+              <div class="rounded-[1.5rem] bg-forest p-4">
+                <div
+                  class="overflow-hidden rounded-[1.25rem] border border-white/10 bg-white/10"
+                >
+                  <img
+                    src="./assets/personal_photo.png"
+                    alt="Image not available"
+                    class="h-[32rem] w-full object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="about"
+          class="mx-auto mt-10 grid w-[min(1120px,calc(100%-2rem))] gap-6 lg:grid-cols-[0.9fr_1.1fr]"
+        >
+          <div class="rounded-[2rem] bg-forest p-8 text-cream shadow-card">
+            <p
+              class="text-sm font-semibold uppercase tracking-[0.28em] text-clay"
+            >
+              About Me
+            </p>
+            <h2 class="mt-4 font-display text-4xl leading-tight">
+              I care about how a website feels as much as how it functions.
+            </h2>
+            <p class="mt-5 text-base leading-8 text-cream/80">
+              The best personal websites are clear, confident, and unmistakably
+              human. I like combining structure and personality so visitors
+              understand who you are within seconds.
+            </p>
+          </div>
+
+          <div class="grid gap-6 sm:grid-cols-2">
+            <article
+              class="rounded-[2rem] border border-clay/50 bg-white/80 p-7 shadow-card"
+            >
+              <p
+                class="text-sm font-semibold uppercase tracking-[0.24em] text-gold"
+              >
+                What I Do
+              </p>
+              <p class="mt-4 text-xl font-semibold text-forest">
+                Website Development
+              </p>
+              <p class="mt-3 leading-7 text-ink/75">
+                I'm currently a front-end devloper that builds great websites
+                with powerful UI/UX.
+              </p>
+            </article>
+            <article
+              class="rounded-[2rem] border border-clay/50 bg-white/80 p-7 shadow-card"
+            >
+              <p
+                class="text-sm font-semibold uppercase tracking-[0.24em] text-gold"
+              >
+                Education
+              </p>
+              <p class="mt-4 text-xl font-semibold text-forest">
+                BSc Computer Engineering
+              </p>
+              <p class="mt-3 leading-7 text-ink/75">
+                Currently pursuing my Bachelor's degree at Birzeit University.
+              </p>
+            </article>
+            <article
+              class="rounded-[2rem] border border-clay/50 bg-white/80 p-7 shadow-card"
+            >
+              <p
+                class="text-sm font-semibold uppercase tracking-[0.24em] text-gold"
+              >
+                Strengths
+              </p>
+              <p class="mt-4 text-xl font-semibold text-forest">
+                Front-end Development
+              </p>
+              <p class="mt-3 leading-7 text-ink/75">
+                Great experience with HTML, CSS, Bootstrap, and TailwindCSS.
+              </p>
+            </article>
+            <article
+              class="rounded-[2rem] border border-clay/50 bg-white/80 p-7 shadow-card"
+            >
+              <p
+                class="text-sm font-semibold uppercase tracking-[0.24em] text-gold"
+              >
+                Goal
+              </p>
+              <p class="mt-4 text-xl font-semibold text-forest">
+                Full Stack Development and AI
+              </p>
+              <p class="mt-3 leading-7 text-ink/75">
+                Looking forward to keep improving my Web-Development skills,
+                NLP, AI and Machine Learning.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section
+          id="work"
+          class="mx-auto mt-10 w-[min(1120px,calc(100%-2rem))] rounded-[2.5rem] border border-white/70 bg-white/75 p-8 shadow-card backdrop-blur lg:p-10"
+        >
+          <div
+            class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between"
+          >
+            <div>
+              <p
+                class="text-sm font-semibold uppercase tracking-[0.28em] text-gold"
+              >
+                Selected Work
+              </p>
+              <h2 class="mt-3 font-display text-4xl text-forest">
+                A few things I’m building and getting better at.
+              </h2>
+            </div>
+            <p class="max-w-xl text-base leading-7 text-ink/70">
+              My CV highlights a mix of programming, systems thinking, problem
+              solving, and hands-on technical projects that reflect how I like
+              to learn by building.
+            </p>
+          </div>
+
+          <div class="mt-8 grid gap-6 lg:grid-cols-3">
+            <article class="rounded-[2rem] bg-sand p-6">
+              <p
+                class="text-sm font-semibold uppercase tracking-[0.22em] text-gold"
+              >
+                01
+              </p>
+              <h3 class="mt-4 text-2xl font-semibold text-forest">
+                Data Analysis Projects
+              </h3>
+              <p class="mt-3 leading-7 text-ink/75">
+                Projects from my GitHub that show how I work with data,
+                structure findings, and turn raw information into clearer
+                insights.
+              </p>
+            </article>
+            <article class="rounded-[2rem] bg-forest p-6 text-cream">
+              <p
+                class="text-sm font-semibold uppercase tracking-[0.22em] text-clay"
+              >
+                02
+              </p>
+              <h3 class="mt-4 text-2xl font-semibold">
+                Single-Cycle Processor
+              </h3>
+              <p class="mt-3 leading-7 text-cream/80">
+                A hardware-focused project from my CV that reflects my interest
+                in computer architecture, logic design, and how systems work
+                under the hood.
+              </p>
+            </article>
+            <article class="rounded-[2rem] bg-sand p-6">
+              <p
+                class="text-sm font-semibold uppercase tracking-[0.22em] text-gold"
+              >
+                03
+              </p>
+              <h3 class="mt-4 text-2xl font-semibold text-forest">
+                DSA Practice Projects
+              </h3>
+              <p class="mt-3 leading-7 text-ink/75">
+                My data structures and algorithms work shows steady problem
+                solving, consistency, and a strong focus on improving core CS
+                fundamentals.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section
+          id="process"
+          class="mx-auto mt-10 mb-10 grid w-[min(1120px,calc(100%-2rem))] gap-6 lg:grid-cols-[0.95fr_1.05fr]"
+        >
+          <div
+            class="rounded-[2rem] border border-clay/60 bg-sand p-8 shadow-card"
+          >
+            <p
+              class="text-sm font-semibold uppercase tracking-[0.28em] text-gold"
+            >
+              Process
+            </p>
+            <h2 class="mt-4 font-display text-4xl text-forest">
+              Student mindset. Builder mentality.
+            </h2>
+            <p class="mt-4 leading-8 text-ink/75">
+              Based on my CV, I’m building across software, problem solving, and
+              technical systems while growing a strong foundation through real
+              projects and consistent practice.
+            </p>
+          </div>
+
+          <div class="grid gap-4">
+            <div
+              class="rounded-[1.75rem] border border-white/70 bg-white/80 p-6 shadow-card"
+            >
+              <p
+                class="text-sm font-semibold uppercase tracking-[0.2em] text-gold"
+              >
+                Step 01
+              </p>
+              <p class="mt-3 text-xl font-semibold text-forest">
+                Computer Engineering Student
+              </p>
+              <p class="mt-2 leading-7 text-ink/75">
+                I’m Saifeddin Saleh, a student focused on learning deeply,
+                building practical projects, and improving my technical range.
+              </p>
+            </div>
+            <div
+              class="rounded-[1.75rem] border border-white/70 bg-white/80 p-6 shadow-card"
+            >
+              <p
+                class="text-sm font-semibold uppercase tracking-[0.2em] text-gold"
+              >
+                Step 02
+              </p>
+              <p class="mt-3 text-xl font-semibold text-forest">
+                Active Across Platforms
+              </p>
+              <p class="mt-2 leading-7 text-ink/75">
+                My CV connects my GitHub, LinkedIn, and LeetCode, showing both
+                project work and ongoing problem-solving practice.
+              </p>
+            </div>
+            <div
+              class="rounded-[1.75rem] border border-white/70 bg-white/80 p-6 shadow-card"
+            >
+              <p
+                class="text-sm font-semibold uppercase tracking-[0.2em] text-gold"
+              >
+                Step 03
+              </p>
+              <p class="mt-3 text-xl font-semibold text-forest">
+                Based in Ramallah
+              </p>
+              <p class="mt-2 leading-7 text-ink/75">
+                I’m based in Ramallah, Palestine, and I’m using this site as a
+                personal space to present my work, skills, and growth.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact" class="border-t border-clay/40 bg-forest">
+        <div
+          class="mx-auto flex w-[min(1120px,calc(100%-2rem))] flex-col gap-8 py-10 text-cream lg:flex-row lg:items-end lg:justify-between"
+        >
+          <div>
+            <p
+              class="text-sm font-semibold uppercase tracking-[0.28em] text-clay"
+            >
+              Contact
+            </p>
+            <h2 class="mt-3 font-display text-4xl">
+              Let’s build something that feels like you.
+            </h2>
+          </div>
+          <div class="space-y-3 text-base text-cream/80">
+            <p>Email: saifdwekat11@gmail.com</p>
+            <p>
+              GitHub:
+              <a
+                href="https://github.com/saifsaleh05"
+                target="_blank"
+                rel="noreferrer"
+                class="font-semibold text-clay transition hover:text-cream"
+              >
+                @saifsaleh05
+              </a>
+            </p>
+            <p>Location: Ramallah, Palestine</p>
+            <p>
+              <a
+                href="./assets/SaifeddinSalehCV.pdf"
+                target="_blank"
+                rel="noreferrer"
+                class="font-semibold text-clay transition hover:text-cream"
+              >
+                Open CV
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
